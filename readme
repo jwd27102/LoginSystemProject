@@ -1,0 +1,16 @@
+Student Login System
+
+Desciption:
+This project is meant to create a tracking system for student logins and out of the M302 classroom at Virginia Western Community College.
+This project consist of three PHP files and one CSS file. The PHP files have HTML embebbed to allow for user interaction through a web browser with PHP to handle backend scripting and interaction with a MySQL database.
+
+The Admin.php file will allow an admin to add to and delete class from the MySQL database. Classes must be added before students can login.
+
+The index.php will be the entry point for students. This will allow them to login and will display a confirmation message of upon success and an error if not connected to a database. There is a provide link to the logout.php page.
+
+The logout.php page will allow a student to logout of the system. Included is a link to allow a student to return to the login page.
+
+Deployment:
+This project is designed to be deployed using a webserver linked to a MySQL database. We used an apache server with MariaDB hosted on a Raspberry Pi 5/500.
+
+To host the files using the apache add the files to the /var/www/html directory on the Raspberry Pi. This will allow students to access the login using a web browser using the Raspberry Pi's IP address or on the Raspberry Pi using the localhost address if needed. 
